@@ -105,7 +105,7 @@ body {
   background: #006697;
   color: #fff;
   padding: 15px 45px;
-  font-size: 16px;
+  font-size: 15px;
   cursor: pointer;
   margin-top: 10px;
 }
@@ -116,12 +116,12 @@ body {
   border: 1px solid #006697;
 }
 
-.gallery-images {
-  width: 150px;
-  height: 150px;
-}
-
 .gallery-row {
   display: flex;
   gap: 20px;
+}
+
+.gallery-images {
+  width: 150px;
+  height: 150px;
 }
