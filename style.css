@@ -1,0 +1,127 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  color: #666;
+  background: #fff;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-template-areas:
+    "sidebar image"
+    "sidebar welcome"
+    "sidebar about"
+    "sidebar gallery";
+}
+
+.sidebar {
+  grid-area: sidebar;
+  background: #006697;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 45px;
+  text-align: left;
+}
+
+.sidebar i {
+  color: #fff;
+  font-size: 35px;
+  margin-bottom: 15px;
+}
+
+.sidebar h3 {
+  color: #fff;
+  font-size: 35px;
+  font-weight: 300;
+  margin-bottom: 60px;
+}
+
+.menu {
+  display: flex;
+  flex-direction: column;
+  padding-left: 40px;
+  gap: 5px;
+}
+
+.menu a {
+  color: #d9d9d9;
+  text-decoration: none;
+  font-size: 17.5px;
+  margin-bottom: 15px;
+}
+
+.pie-image {
+  grid-area: image;
+}
+
+.pie-image img {
+  width: 100%;
+  height: 500px;
+}
+
+.welcome-section,
+.about-team,
+.gallery {
+  padding: 45px;
+}
+
+.welcome-section h3,
+.about-team h4,
+.gallery h4 {
+  color: #006697;
+  font-size: 35px;
+  font-weight: 300;
+  margin-bottom: 25px;
+}
+
+.welcome-section p,
+.about-team p {
+  line-height: 2;
+  font-size: 15px;
+  margin-bottom: 20px;
+}
+
+.about-team {
+  display: flex;
+  gap: 40px;
+  align-items: flex-start;
+  text-align: justify;
+}
+
+.juice-image img {
+  width: 270px;
+  height: 450px;
+}
+
+.read-more {
+  background: #006697;
+  color: #fff;
+  padding: 15px 45px;
+  font-size: 16px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.read-more:hover {
+  background: #fff;
+  color: #006697;
+  border: 1px solid #006697;
+}
+
+.gallery-images {
+  width: 150px;
+  height: 150px;
+}
+
+.gallery-row {
+  display: flex;
+  gap: 20px;
+}
